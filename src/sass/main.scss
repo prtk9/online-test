@@ -1,0 +1,238 @@
+.index-baner {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .vertical-center {
+        position: relative;
+        top: 80px;
+    }
+
+    .index-baner {
+        position: relative;
+        bottom: 30px;
+    }
+
+    section .services .service {
+        border: 1px solid #FF0000;
+    }
+}
+
+@media (max-width: 768px) {
+    .index-baner {
+        height: 700px;
+        display: table;
+        position: relative;
+        bottom: 13px;
+    }
+
+    .vertical-center {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    section .services .service {
+        border: 1px solid #FF0000;
+        border-radius: 10px;
+    }
+}
+
+.index-baner h2 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+section .services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 992px) {
+    section .services {
+        text-align: center;
+        margin-left: 35%;
+        width: 30%;
+    }
+
+    section .services .service {
+        flex: 25%;
+        padding: 20px 5px;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    section .services {
+        text-align: center;
+        margin-left: 15%;
+        width: 75%;
+    }
+
+    section .services .service {
+        flex: 25%;
+        padding: 30px 10px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    section .services {
+        text-align: left;
+        width: 100%;
+    }
+
+    section .services .service {
+        flex: 100%;
+        padding: 5px 5px;
+        margin: 10px
+    }
+}
+
+section .services .service h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .content {
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 50px;
+    }
+
+    section .column {
+        flex: 50%;
+    }
+
+    .content .column img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    section .column {
+        flex: 100%;
+        margin: 20px;
+    }
+}
+
+section .column img {
+    width: 100%;
+    height: 25vh;
+}
+
+.content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.content h2 {
+    font-weight: normal;
+}
+
+.testimonials {
+    background-color: lightgray;
+}
+
+.testimonials-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.testimonials h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.testimonials .grid-container {
+    display: grid;
+}
+
+.testimonials .col-testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.testimonials .testimonial-img {
+    margin-top: -14px;
+    margin-left: 15px;
+}
+
+.testimonials .testimonial-author {
+    margin-top: -5px;
+}
+
+.testimonials .testimonial-author span {
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 992px) {
+    .testimonials .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .testimonials .grid-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .testimonials .col-testimonial {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .testimonials .grid-container {
+        grid-template-columns: auto;
+    }
+
+    .testimonials .grid-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .testimonials .col-testimonial {
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials .grid-container .grid-display {
+        display: none;
+    }
+
+    .testimonials .grid-item {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testimonials .col-testimonial {
+        height: 100px;
+    }
+}
